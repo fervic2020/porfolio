@@ -109,11 +109,17 @@ here begining style "portafolio"
 }
 
 .porfolio__buttonsWrapper > button {
-  margin: 0 2%;
+  margin: 0 1%;
   font-size: 1.5em;
   border-radius: 2rem;
   border: 0px;
   background-color: #fe4f6c;
+}
+
+.portfolio__imageWrapper {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 /* 
