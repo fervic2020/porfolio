@@ -33,6 +33,89 @@
   font-weight: bold;
 }
 
+/*00000000000000000000000000000000000000000
+here begin style "home"
+000000000000000000000000000000000000000000*/
+
+.home {
+}
+
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home__information {
+  display: grid;
+}
+
+.home__greeting {
+  font-size: 2em;
+}
+
+.home__presentation {
+  font-size: 2em;
+}
+
+.home__buttonSeeMyWork {
+  width: 25%;
+  font-size: 2em;
+  color: white;
+  background-color: #fe4f6c;
+  border: 0px solid black;
+  border-radius: 20rem;
+}
+/*00000000000000000000000000000000000000000
+here ending style "home"
+00000000000000000000000000000000000000000*/
+
+/*00000000000000000000000000000000000000000
+here begining style "about"
+00000000000000000000000000000000000000000*/
+
+#about {
+}
+
+.about__title {
+  font-size: 2em;
+}
+
+.about__imgWrapper {
+  display: flex;
+  justify-content: center;
+}
+/*00000000000000000000000000000000000000000
+here ending style "about"
+00000000000000000000000000000000000000000*/
+
+/*00000000000000000000000000000000000000000
+here begining style "portafolio" 
+00000000000000000000000000000000000000000*/
+
+#portfolio {
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.portfolio__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.porfolio__buttonsWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.porfolio__buttonsWrapper > button {
+  margin: 0 2%;
+  font-size: 1.5em;
+  border-radius: 2rem;
+  border: 0px;
+  background-color: #fe4f6c;
+}
+
 /* 
 .container > div:last-child > div:last-child {
   display: grid;
