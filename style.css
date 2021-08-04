@@ -1,0 +1,111 @@
+.container {
+  background-color: #3a3973;
+}
+
+.container > div {
+  background-color: aquamarine;
+  margin: 0 0 10% 0;
+  display: grid;
+  grid-template-columns: auto 50%;
+}
+
+.nav {
+  display: flex;
+  background-color: #3a3973;
+  justify-content: center;
+  color: black;
+  position: sticky;
+  top: 0%;
+}
+
+.nav h1 {
+  margin: 0.5% 0;
+  padding-right: 20%;
+  font-size: 3.2em;
+}
+
+.nav__link {
+  display: flex;
+  padding: 0 2%;
+  font-size: 1.3em;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* 
+.container > div:last-child > div:last-child {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#portfolio {
+  display: block;
+}
+
+#portfolio h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+h2 span {
+  color: #fe4f6c;
+}
+#portfolio > div:first-child {
+  justify-text: center;
+  background-color: chocolate;
+}
+
+.img_wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  width: 7rem;
+  font-size: 1.5em;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  color: white;
+  background-color: #fe4f6c;
+  border: 1px solid #fe4f6c;
+}
+
+.button:focus {
+  background-color: transparent;
+  color: #fe4f6c;
+}
+
+#portfolio > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: blanchedalmond;
+}
+
+#portfolio > div:last-of-type {
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.item {
+  position: relative;
+}
+
+.item .button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h2 {
+  font-size: 4em;
+} */
