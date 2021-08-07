@@ -1,10 +1,11 @@
 .container {
   background-color: #3a3973;
+  display: grid;
+  grid-template-columns: 95vw;
+  grid-row-gap: 2%;
 }
 
 .container > div {
-  background-color: aquamarine;
-  margin: 0 0 10% 0;
   display: grid;
   grid-template-columns: auto 50%;
 }
@@ -34,8 +35,7 @@
 }
 
 /*00000000000000000000000000000000000000000
-here begin style "home"
-000000000000000000000000000000000000000000*/
+here begin style "home block"*/
 
 .home {
 }
@@ -66,12 +66,10 @@ here begin style "home"
   border-radius: 20rem;
 }
 /*00000000000000000000000000000000000000000
-here ending style "home"
-00000000000000000000000000000000000000000*/
+
 
 /*00000000000000000000000000000000000000000
-here begining style "about"
-00000000000000000000000000000000000000000*/
+here begining style "about block"*/
 
 #about {
 }
@@ -84,13 +82,15 @@ here begining style "about"
   display: flex;
   justify-content: center;
 }
+
+.about__imgWrapper > img {
+  border: #fe4f6c 5px solid;
+}
 /*00000000000000000000000000000000000000000
-here ending style "about"
-00000000000000000000000000000000000000000*/
+
 
 /*00000000000000000000000000000000000000000
-here begining style "portafolio" 
-00000000000000000000000000000000000000000*/
+here begining style "portafolio block" */
 
 #portfolio {
   grid-template-columns: auto;
@@ -119,7 +119,21 @@ here begining style "portafolio"
 .portfolio__imageWrapper {
   margin-top: 2%;
   display: grid;
+  gap: 2%;
   grid-template-columns: auto auto auto;
+}
+
+.item {
+  /* position: relative; */
+}
+
+.item > a,
+.item button {
+  position: relative;
+  display: flex;
+  height: 10%;
+  width: 10%;
+  z-index: 1;
 }
 
 /* 
