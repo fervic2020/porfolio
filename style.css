@@ -1,14 +1,48 @@
+/*here beginning generals style to all...
+the page and elements that shape its*/
+
+body {
+  background-color: firebrick;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   background-color: #3a3973;
+  width: 98vw;
   display: grid;
-  grid-template-columns: 95vw;
-  grid-row-gap: 2%;
+  justify-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: 5% 1fr 1fr;
+  color: white;
 }
 
 .container > div {
   display: grid;
-  grid-template-columns: auto 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 5%;
+  padding: 0 5%;
+  margin-top: 3%;
 }
+
+.img_wrapper > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:active {
+  background-color: aqua;
+}
+/*00000000000000000000000000000000000000000
+here begin style "nav bar block"*/
 
 .nav {
   display: flex;
@@ -23,6 +57,7 @@
   margin: 0.5% 0;
   padding-right: 20%;
   font-size: 3.2em;
+  color: #fe4f6c;
 }
 
 .nav__link {
@@ -40,11 +75,6 @@ here begin style "home block"*/
 .home {
 }
 
-.img_wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .home__information {
   display: grid;
 }
@@ -58,8 +88,9 @@ here begin style "home block"*/
 }
 
 .home__buttonSeeMyWork {
-  width: 25%;
-  font-size: 2em;
+  min-width: 170px;
+  width: 40%;
+  font-size: 1.5em;
   color: white;
   background-color: #fe4f6c;
   border: 0px solid black;
@@ -78,13 +109,22 @@ here begining style "about block"*/
   font-size: 2em;
 }
 
+.about__information span {
+  margin: 0 0 0 10%;
+}
+
+.about__information strong {
+  font-weight: 900;
+  display: inline-block;
+  width: 15%;
+}
 .about__imgWrapper {
   display: flex;
   justify-content: center;
 }
 
-.about__imgWrapper > img {
-  border: #fe4f6c 5px solid;
+#photo {
+  border: 5px #fe4f6c solid;
 }
 /*00000000000000000000000000000000000000000
 
@@ -93,6 +133,8 @@ here begining style "about block"*/
 here begining style "portafolio block" */
 
 #portfolio {
+  display: grid;
+  grid-auto-rows: auto;
   grid-template-columns: auto;
   justify-content: center;
 }
@@ -109,106 +151,61 @@ here begining style "portafolio block" */
 }
 
 .porfolio__buttonsWrapper > button {
+  min-width: 10%;
   margin: 0 1%;
+  padding: 0.5em 1em;
   font-size: 1.5em;
   border-radius: 2rem;
   border: 0px;
+  color: white;
   background-color: #fe4f6c;
+}
+
+.porfolio__buttonsWrapper > button:focus {
+  color: #fe4f6c;
+  background-color: #fe4f6c00;
+  border: 2px solid #fe4f6c;
 }
 
 .portfolio__imageWrapper {
   margin-top: 2%;
   display: grid;
-  gap: 2%;
-  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 2% 1%;
+  grid-template-columns: 30% 30% 30%;
 }
 
-.item {
-  /* position: relative; */
-}
-
-.item > a,
-.item button {
-  position: relative;
-  display: flex;
-  height: 10%;
-  width: 10%;
-  z-index: 1;
-}
-
-/* 
-.container > div:last-child > div:last-child {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-#portfolio {
+.portfolio__imageWrapper img {
   display: block;
-}
-
-#portfolio h2 {
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-h2 span {
-  color: #fe4f6c;
-}
-#portfolio > div:first-child {
-  justify-text: center;
-  background-color: chocolate;
-}
-
-.img_wrapper {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.img_wrapper img {
   width: 100%;
   height: auto;
-}
-
-.button {
-  width: 7rem;
-  font-size: 1.5em;
-  border-radius: 2rem;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  color: white;
-  background-color: #fe4f6c;
-  border: 1px solid #fe4f6c;
-}
-
-.button:focus {
-  background-color: transparent;
-  color: #fe4f6c;
-}
-
-#portfolio > div:first-of-type {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  background-color: blanchedalmond;
-}
-
-#portfolio > div:last-of-type {
-  display: grid;
-  gap: 3rem;
-  justify-content: center;
+  max-width: 400px;
 }
 
 .item {
   position: relative;
 }
 
-.item .button {
-  position: absolute;
-  top: 0;
-  left: 0;
+.item:hover > img {
+  opacity: 0.4;
 }
 
-h2 {
-  font-size: 4em;
-} */
+.item:hover > .wrapperButtonA {
+  visibility: visible;
+}
+
+.wrapperButtonA {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 50%;
+  height: 10%;
+  visibility: hidden;
+}
+
+.wrapperButtonA > button,
+.wrapperButtonA > a {
+  width: 10%;
+  margin: 0 5%;
+  border-radius: 20rem;
+}
