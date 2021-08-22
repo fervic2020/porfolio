@@ -13,7 +13,7 @@ body {
   display: grid;
   justify-content: center;
   grid-template-columns: auto;
-  grid-template-rows: 5% 1fr 1fr;
+  grid-template-rows: 5% auto auto auto;
   color: white;
 }
 
@@ -203,9 +203,75 @@ here begining style "portafolio block" */
   visibility: hidden;
 }
 
-.wrapperButtonA > button,
-.wrapperButtonA > a {
-  width: 10%;
-  margin: 0 5%;
-  border-radius: 20rem;
+/*here begin style of eyes in the seccion porfolio*/
+.wrapperButtonA > div {
+  width: 7%;
+  height: 82.03%;
+  margin: 1% 5%;
+  border: solid 3px black;
+  border-radius: 75% 0%;
+  transform: rotate(45deg);
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+
+.wrapperButtonA > div::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 15%;
+  height: 15%;
+  border: solid 3px black;
+  border-radius: 50%;
+  top: 26%;
+  left: 30%;
+}
+/*here end style of eyes*/
+
+/*here begin syle of chains icons*/
+
+.chain {
+  position: relative;
+  width: 7%;
+  height: 82.03%;
+}
+
+.chain_link1 {
+  display: inline-block;
+  background-color: white;
+  width: 40%;
+  height: 71.015%;
+  margin: 1% 3%;
+  border: solid 2px black;
+  border-radius: 10px 10px 10px 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 60%;
+}
+
+.chain_link2 {
+  display: inline-block;
+  background-color: white;
+  width: 40%;
+  height: 71.015%;
+  margin: 1% 3%;
+  border: solid 2px black;
+  border-radius: 10px 10px 10px 10px;
+  transform: rotate(45deg);
+  position: relative;
+  top: -20%;
+  left: 83%;
+}
+
+.chain_link2::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 115.015%;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 30%;
+  position: absolute;
+  top: 65%;
+  left: 30%;
 }
