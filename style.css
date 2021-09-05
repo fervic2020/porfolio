@@ -9,7 +9,8 @@ body {
 
 .container {
   background-color: #3a3973;
-  width: 98vw;
+  width: 100vw;
+  height: 100%;
   display: grid;
   justify-content: center;
   grid-template-columns: auto;
@@ -92,6 +93,7 @@ here begin style "home block"*/
   width: 40%;
   font-size: 1.5em;
   color: white;
+  cursor: pointer;
   background-color: #fe4f6c;
   border: 0px solid black;
   border-radius: 20rem;
@@ -118,6 +120,7 @@ here begining style "about block"*/
   display: inline-block;
   width: 15%;
 }
+
 .about__imgWrapper {
   display: flex;
   justify-content: center;
@@ -156,6 +159,7 @@ here begining style "portafolio block" */
   padding: 0.5em 1em;
   font-size: 1.5em;
   border-radius: 2rem;
+  cursor: pointer;
   border: 0px;
   color: white;
   background-color: #fe4f6c;
@@ -171,8 +175,12 @@ here begining style "portafolio block" */
   margin-top: 2%;
   display: grid;
   justify-content: center;
-  gap: 2% 1%;
+  gap: 0% 1%;
   grid-template-columns: 30% 30% 30%;
+}
+
+.item {
+  position: relative;
 }
 
 .portfolio__imageWrapper img {
@@ -182,12 +190,8 @@ here begining style "portafolio block" */
   max-width: 400px;
 }
 
-.item {
-  position: relative;
-}
-
 .item:hover > img {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 
 .item:hover > .wrapperButtonA {
